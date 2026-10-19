@@ -104,8 +104,7 @@ portfolio, il ne doit plus rester aucun bloc jaune.
    `https://www.youtube-nocookie.com/embed/AbCdEf12345`
 
 ### LinkedIn (careers.html)
-- Remplacer `YOUR-PROFILE` (deux fois) par l'identifiant de votre profil
-  (`https://www.linkedin.com/in/<identifiant>/`).
+- Profil déjà renseigné : `https://fr.linkedin.com/in/maxence-blanzat-713523433`.
 - Sur LinkedIn : *Profil → Ajouter un profil dans une autre langue* pour créer la version anglaise.
 
 ### Role models et projets de mobilité (careers.html)
