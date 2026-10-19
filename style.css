@@ -129,6 +129,7 @@ p  { margin: 0 0 1em; }
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 35%;
   border: 4px solid var(--accent);
   background: #fff;
 }

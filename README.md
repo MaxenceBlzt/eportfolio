@@ -85,8 +85,7 @@ Une fois un contenu rédigé, **supprimer entièrement le bloc** `<div class="to
 portfolio, il ne doit plus rester aucun bloc jaune.
 
 ### Photo de profil
-- Mettre votre photo dans `assets/img/`, par ex. `assets/img/profile.jpg` (format carré, ~400×400 px).
-- Dans `index.html`, remplacer `assets/img/profile.svg` par `assets/img/profile.jpg`.
+- Photo déjà en place : `assets/img/profile.jpg`. Pour la changer, remplacer ce fichier en gardant le même nom.
 
 ### Images de projets
 - Ajouter vos images dans `assets/img/` (ex. `projet-convertisseur.jpg`).
