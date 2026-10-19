@@ -8,7 +8,7 @@ Le contenu du site est en anglais.
 ```
 eportfolio-cam-l3/
 ├── index.html        → Welcome
-├── projects.html     → Engineering Courses (TIPE + projets N7)
+├── projects.html     → Engineering Courses (projets N7)
 ├── civic.html        → Civic Engagement
 ├── mobility.html     → Mobility
 ├── careers.html      → Careers (page évaluée : pitch, CVs, LinkedIn, role models, mobilités)
@@ -89,8 +89,9 @@ portfolio, il ne doit plus rester aucun bloc jaune.
 - Dans `index.html`, remplacer `assets/img/profile.svg` par `assets/img/profile.jpg`.
 
 ### Images de projets
-- Ajouter vos images dans `assets/img/` (ex. `tipe-propeller.jpg`).
-- Dans `projects.html`, remplacer `assets/img/tipe-placeholder.svg` par le nom de votre image.
+- Ajouter vos images dans `assets/img/` (ex. `projet-convertisseur.jpg`).
+- Dans `projects.html`, les insérer dans la carte du projet concerné :
+  `<img src="assets/img/projet-convertisseur.jpg" alt="Description de l'image">`
 
 ### CVs
 - Remplacer `assets/cv/CV_EN.pdf` et `assets/cv/CV_FR.pdf` par vos vrais CVs,
