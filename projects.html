@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering Courses | Maxence Blanzat – ePortfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Maxence Blanzat <span>| ePortfolio</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav">
+        <li><a href="index.html">Welcome</a></li>
+        <li><a href="projects.html" class="active" aria-current="page">Engineering Courses</a></li>
+        <li><a href="civic.html">Civic Engagement</a></li>
+        <li><a href="mobility.html">Mobility</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="sports.html">Sports &amp; Interests</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Engineering Courses &amp; Projects</h1>
+    <p>From preparatory-class research to N7 engineering projects in electronics, energy conversion and control systems.</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <!-- ================= FEATURED PROJECT: TIPE ================= -->
+  <section class="section" id="tipe">
+    <h2>Featured project – TIPE: passive autorotation for drone parcel drops</h2>
+    <p>
+      <span class="badge">Preparatory classes – PSI</span>
+      <span class="badge">Team of 2</span>
+      <span class="badge gold">Theme: "Loops and Cycles"</span>
+    </p>
+
+    <div class="feature">
+      <div>
+        <p>
+          The <strong>TIPE</strong> (<em>Travail d'Initiative Personnelle Encadré</em>) is a
+          supervised research project presented at the French engineering school entrance exams.
+          With my teammate, we studied how a <strong>freely rotating propeller</strong> can slow
+          down a parcel dropped from a drone, without any motor or parachute: the airflow makes the
+          blades spin (<strong>autorotation</strong>), which generates lift and brakes the fall –
+          the same principle as a sycamore seed or a helicopter after engine failure.
+        </p>
+
+        <h3>Approach</h3>
+        <ul class="clean">
+          <li><strong>Modelling:</strong> we derived a non-linear ordinary differential equation for the
+            vertical motion and obtained an <strong>analytical solution in tanh</strong>, which gives the
+            terminal velocity.</li>
+          <li><strong>Simulation:</strong> the analytical solution was cross-checked with a
+            <strong>fourth-order Runge–Kutta (RK4)</strong> solver written in Python.</li>
+          <li><strong>Design &amp; manufacturing:</strong> we designed a propeller with a
+            <strong>Clark Y airfoil</strong> in OnShape, using <strong>FeatureScript</strong> to generate
+            the blade geometry, then <strong>3D-printed</strong> it.</li>
+          <li><strong>Experiments:</strong> drops from a height of <strong>12 m</strong>, filmed at
+            <strong>240 fps</strong>; trajectories were extracted frame by frame with the
+            <strong>Tracker</strong> video-analysis software.</li>
+        </ul>
+
+        <div class="stats">
+          <div class="stat"><strong>6.47 m/s</strong><span>predicted terminal velocity</span></div>
+          <div class="stat"><strong>7.23 m/s</strong><span>measured terminal velocity</span></div>
+          <div class="stat"><strong>285 g</strong><span>payload mass</span></div>
+          <div class="stat"><strong>18 %</strong><span>model / experiment gap</span></div>
+        </div>
+
+        <h3>What I learned</h3>
+        <ul class="clean">
+          <li>Building a physical model, simplifying it wisely, and validating it numerically.</li>
+          <li>Going through the whole engineering loop: theory → CAD → prototype → measurement → critical analysis.</li>
+          <li>Explaining the gap between model and reality (blade losses, Reynolds number effects, printing tolerances…).</li>
+        </ul>
+        <div class="todo">TODO: Check the explanation of the 18 % gap and adapt the last bullet to the causes you
+          actually identified in your TIPE. Optionally add a link to your slides or report (PDF in assets/).</div>
+      </div>
+
+      <figure>
+        <img src="assets/img/tipe-placeholder.svg" alt="Placeholder for a photo of the 3D-printed Clark Y propeller">
+        <figcaption>3D-printed Clark Y propeller used for the drop tests.</figcaption>
+        <div class="todo">TODO: Replace with a real photo (e.g. assets/img/tipe-propeller.jpg): the printed propeller,
+          the OnShape model, or a Tracker trajectory plot comparing the tanh model, RK4 and measurements.</div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= N7 PROJECTS (3EA) ================= -->
+  <section class="section" id="n7-projects">
+    <h2>ENSEEIHT projects – 3EA department</h2>
+    <p class="lead">
+      The 3EA curriculum covers electronics, electrical energy conversion and automatic control.
+      I will document here the projects carried out during my engineering studies.
+    </p>
+
+    <div class="grid grid-2">
+      <article class="card">
+        <span class="badge">Electronics</span>
+        <h3>Analog / digital electronics project</h3>
+        <div class="todo">TODO: Title of the project, context (course, semester, team size), objective
+          (e.g. design of a filter, amplifier, acquisition chain, PCB), tools used (LTspice, KiCad, oscilloscope…),
+          your personal contribution and the result (measurements, plots).</div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Energy conversion</span>
+        <h3>Power electronics project</h3>
+        <div class="todo">TODO: e.g. DC-DC converter (buck/boost), inverter or motor drive. Describe the
+          specifications (voltage, power, efficiency), the simulation tool (PSIM, PLECS, Simulink…),
+          the tests and what you learned about energy efficiency.</div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Control systems</span>
+        <h3>Automatic control project</h3>
+        <div class="todo">TODO: e.g. PID control of a motor, a pendulum or a thermal system. Give the model
+          (transfer function, state space), the controller design method, MATLAB/Simulink results and
+          the experimental validation.</div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Embedded systems</span>
+        <h3>Embedded systems / microcontroller project</h3>
+        <div class="todo">TODO: e.g. programming an STM32 / Arduino in C, sensors, communication bus
+          (I²C, SPI, UART, CAN), real-time constraints. Link to the code (GitHub) if possible.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Technical skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Scientific foundations</h3>
+        <ul class="clean">
+          <li>Mechanics, fluid dynamics, electromagnetism</li>
+          <li>Differential equations, linear algebra</li>
+          <li>Signal processing basics</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Software &amp; tools</h3>
+        <ul class="clean">
+          <li>Python (NumPy, Matplotlib, numerical solvers)</li>
+          <li>OnShape &amp; FeatureScript (CAD)</li>
+          <li>3D printing</li>
+          <li>Tracker (video analysis)</li>
+        </ul>
+        <div class="todo">TODO: Add tools learnt at N7 (MATLAB/Simulink, C, VHDL, LTspice, KiCad…).</div>
+      </div>
+      <div class="card">
+        <h3>Soft skills</h3>
+        <ul class="clean">
+          <li>Rigour and perseverance (two years of preparatory classes)</li>
+          <li>Teamwork (TIPE in pairs)</li>
+          <li>Oral presentation of scientific work</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Maxence Blanzat – ENSEEIHT, Toulouse INP</span>
+    <a href="mailto:maxence.blanzat@icloud.com">maxence.blanzat@icloud.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
