@@ -479,9 +479,9 @@ ul.clean li::before {
 .contact-links a:hover { background: var(--ink); color: var(--white); }
 .contact-links .icon {
   flex: none;
-  width: 36px;
-  height: 36px;
-  padding: 8px;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
   border-radius: 50%;
   background: var(--cobalt);
   fill: var(--white);
