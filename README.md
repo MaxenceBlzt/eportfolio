@@ -71,18 +71,13 @@ Le site en ligne se met à jour automatiquement en 1 à 2 minutes.
 
 ## 2. Remplacer les placeholders
 
-Tous les éléments à compléter apparaissent sur le site dans des **blocs jaunes en pointillés**
-(classe CSS `todo`) commençant par `TODO:`. Pour les retrouver tous :
+Les éléments à compléter vivent dans `todos.local.js`, un fichier ignoré par Git. Ils
+n'apparaissent en **blocs jaunes** que lorsqu'une page est ouverte depuis le disque : le site
+en ligne ne les affiche jamais.
 
-```powershell
-Select-String -Path *.html -Pattern "TODO"
-```
-
-ou, dans VS Code : `Ctrl+Shift+F` → `TODO`.
-
-Une fois un contenu rédigé, **supprimer entièrement le bloc** `<div class="todo">…</div>`
-(ou `<span class="todo">…</span>`) et le remplacer par votre texte. Avant de rendre le
-portfolio, il ne doit plus rester aucun bloc jaune.
+Une fois un contenu rédigé, écrire le texte dans la page HTML et supprimer le bloc de
+`todos.local.js`. Un hook local `pre-push` refuse tout push dont les pages contiennent encore
+un `TODO:`, un bloc `class="todo"` ou `VIDEO_ID`.
 
 ### Photo de profil
 - Photo déjà en place : `assets/img/profile.jpg`. Pour la changer, remplacer ce fichier en gardant le même nom.
@@ -99,7 +94,7 @@ portfolio, il ne doit plus rester aucun bloc jaune.
 ### Vidéo Elevator Pitch (careers.html)
 1. Mettre la vidéo en ligne sur YouTube avec la visibilité **Non répertoriée** (Unlisted).
 2. Récupérer son identifiant : dans `https://www.youtube.com/watch?v=AbCdEf12345`, c'est `AbCdEf12345`.
-3. Dans `careers.html`, remplacer `VIDEO_ID` dans l'URL de l'iframe :
+3. Déplacer le bloc vidéo de `todos.local.js` vers `careers.html` et y remplacer `VIDEO_ID` dans l'URL de l'iframe :
    `https://www.youtube-nocookie.com/embed/AbCdEf12345`
 
 ### LinkedIn (careers.html)
