@@ -414,6 +414,11 @@ ul.clean li::before {
   overflow: hidden;
   margin-top: 8px;
 }
+.video-wrapper.vertical {
+  aspect-ratio: 9 / 16;
+  max-width: 360px;
+  margin-inline: auto;
+}
 .video-wrapper iframe {
   position: absolute;
   inset: 0;
